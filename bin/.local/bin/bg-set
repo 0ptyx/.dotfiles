@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Utility script to set background image
+
+BG_PATH="$HOME/.local/share/wallpaper/wallpaper"
+
+if [[ -z $1 ]]; then
+    echo "please provide the full path to an image"
+    exit
+else
+    if [[ -f "$BG_PATH" ]]; then
+        rm $BG_PATH
+    fi
+    ln -s $1 $BG_PATH
+    feh --bg-fill $BG_PATH
+fi

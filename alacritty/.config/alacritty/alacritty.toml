@@ -1,0 +1,5 @@
+import = ["~/.config/alacritty/nightcity.toml"]
+[font]
+normal = { family = "Blex Mono Nerd Font Mono" }
+[window]
+opacity = 0.9
