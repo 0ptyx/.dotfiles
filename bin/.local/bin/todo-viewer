@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+
+if [ "$1" == "" ]
+then
+    rg -A 10 TODO
+else
+    rg -A 10 TODO $1
+fi

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Utility script to set background image
+
+BG_PATH="$HOME/.config/wallpapers/wallpaper"
+
+# if provided a path then we're changing the wallpaper
+if [[ -n $1 ]]; then
+	ln -fs $1 $BG_PATH
+fi
+feh --bg-fill $BG_PATH
