@@ -13,8 +13,11 @@ return {
         end
     },
     { "ellisonleao/gruvbox.nvim", priority = 1000 , config = function()
-        vim.cmd([[colorscheme gruvbox]])
-    end, opts = ...}
+    end, opts = ...},
+
+    { "Shatur/neovim-ayu", priority = 1000, config = function()
+        vim.cmd([[colorscheme ayu-dark]])
+    end, opts = ... }
 
 
 }
