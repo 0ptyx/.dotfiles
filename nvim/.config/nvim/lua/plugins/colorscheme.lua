@@ -16,6 +16,11 @@ return {
     end, opts = ...},
 
     { "Shatur/neovim-ayu", priority = 1000, config = function()
+        require('ayu').setup({
+            overrides = {
+                LineNr = { fg = "#465063" },
+            },
+        })
         vim.cmd([[colorscheme ayu-dark]])
     end, opts = ... }
 
